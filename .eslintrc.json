@@ -1,0 +1,57 @@
+{
+  // Prevent ESLint from looking at parent directories
+  "root": true,
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "node": true,
+    // Add support for ES6 features
+    "es6": true
+  },
+  "rules": {
+    "object-curly-newline": [
+      "warn",
+      {
+        "ObjectPattern": {
+          "multiline": true
+        },
+        "ImportDeclaration": "never",
+        "ExportDeclaration": {
+          "multiline": true,
+          "minProperties": 3
+        }
+      }
+    ],
+    "no-duplicate-case": "warn",
+    "no-empty": "warn",
+    "no-extra-semi": "warn",
+    "no-func-assign": "warn",
+    "no-irregular-whitespace": "warn",
+    "no-unreachable": "warn",
+    "curly": "warn",
+    "dot-notation": "warn",
+    "eqeqeq": "warn",
+    "no-empty-function": "warn",
+    "no-multi-spaces": "warn",
+    "no-mixed-spaces-and-tabs": "warn",
+    "no-trailing-spaces": "warn",
+    "default-case": "warn",
+    "no-fallthrough": "warn",
+    "no-unused-vars": "warn",
+    "no-use-before-define": "warn",
+    "no-redeclare": "warn",
+    "indent": [
+      "warn",
+      4
+    ],
+    "quotes": [
+      "warn",
+      "double"
+    ],
+    "semi": [
+      "warn",
+      "always"
+    ],
+    "radix": "off"
+  }
+}

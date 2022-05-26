@@ -1,11 +1,11 @@
 const Sequelize = require("sequelize");
-require("dotenv").congif();
+require("dotenv").config();
 
 let sequelize;
 
 if (process.env.JAWSDB_URL)
 {
-    //process.env.JAWSDB_URL is a Heroku database
+    //process.env.JAWSDB_URL is a online sequel database hosted by Heroku
     sequelize = new Sequelize(process.env.JAWSDB_URL);
 } else
 {
