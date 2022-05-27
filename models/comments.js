@@ -11,14 +11,6 @@ Comments.init(
             primaryKey: true,
             autoIncrement: true,
         },
-        title: {
-            type: DataTypes.STRING,
-            allowNull: false,
-            validate: {
-                notEmpty: true,
-                len: [1, 36],
-            },
-        },
         content: {
             type: DataTypes.TEXT('tiny'),
             allowNull: false,
